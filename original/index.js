@@ -19,7 +19,7 @@ db.sequelize.sync({alter: true })
   })
   .catch((err) => {
     console.log("Failed to sync db: " + err.message);
-  });
+  });//error message
 
 app.get('/',(req,res) => {
     res.json({message:"message from api"});
